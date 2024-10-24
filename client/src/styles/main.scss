@@ -1,0 +1,39 @@
+@import 'fonts.scss';
+@import 'vars.scss';
+@import 'colors.scss';
+
+img {
+	-webkit-user-drag: none;
+	user-select: none;
+}
+body {
+	padding: 0;
+	margin: 0;
+}
+input,
+textarea {
+	border: transparent;
+	outline: transparent;
+
+	resize: none;
+}
+
+button {
+	border: none;
+	background: transparent;
+	cursor: pointer;
+	outline: transparent;
+	transition: all 0.3s ease;
+}
+
+ul {
+	list-style: none;
+}
+
+main {
+	position: relative;
+	z-index: 0;
+}
+* {
+	font-family: Roboto;
+}
