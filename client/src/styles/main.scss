@@ -1,7 +1,7 @@
-@import 'fonts.scss';
-@import 'vars.scss';
-@import 'colors.scss';
-
+@use './fonts.scss';
+@use './vars.scss';
+@use './colors.scss';
+@use './reset.scss';
 img {
 	-webkit-user-drag: none;
 	user-select: none;
