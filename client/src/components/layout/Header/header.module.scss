@@ -1,0 +1,40 @@
+.header {
+	margin-top: 48px;
+	&_wrapper {
+		position: relative;
+	}
+	&_search {
+		width: 100%;
+		padding: 12px 18px;
+		padding-right: 52px;
+		border: 2px solid var(--gray-30);
+		border-radius: 12px;
+		color: var(--neutral-black);
+		font-size: 16px;
+		line-height: 20.8px;
+		font-weight: 500;
+		transition: all 0.2s;
+
+		background-color: var(--neutral-white);
+		&::placeholder {
+			color: var(--gray-30);
+		}
+		&_active {
+			position: relative;
+			z-index: 100;
+			&:hover {
+				border-radius: 12px !important;
+			}
+		}
+		&:hover {
+			border-radius: 8px;
+		}
+	}
+	&_icon {
+		z-index: 101;
+		position: absolute;
+		right: 18px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}

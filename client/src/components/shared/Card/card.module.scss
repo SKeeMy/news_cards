@@ -1,0 +1,65 @@
+.card {
+	border-radius: 16px;
+	overflow: hidden;
+	&_icon {
+		width: 24px;
+		height: 24px;
+	}
+	&_image {
+		position: relative;
+		width: 100%;
+		height: 217px;
+	}
+	&_body {
+		padding: 24px;
+		padding-top: 22px;
+		background-color: rgb(245, 245, 245);
+		&_text {
+			font-weight: 700;
+			font-size: 18px;
+			line-height: 23px;
+			color: var(--neutral-black);
+			height: 69px;
+			-webkit-line-clamp: 3;
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			overflow: hidden;
+		}
+		&_type {
+			margin-top: 10px;
+		}
+	}
+}
+.pink {
+	color: var(--pink-pine);
+	svg {
+		path {
+			fill: var(--pink-pine);
+		}
+	}
+}
+.green {
+	color: var(--green-pine);
+	svg {
+		path {
+			fill: var(--green-pine);
+		}
+	}
+}
+.orange {
+	color: var(--orange-pine);
+	svg {
+		path {
+			fill: var(--orange-pine);
+		}
+	}
+}
+.bottom_wrapper {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	line-height: 21.6px;
+	font-size: 18px;
+	font-weight: 700;
+	justify-content: space-between;
+}

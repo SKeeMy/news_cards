@@ -1,0 +1,22 @@
+@use '../../../styles/use/utils.scss';
+.home {
+	margin-top: 48px;
+	margin-bottom: 74px;
+	&_buttons {
+		display: flex;
+		justify-content: center;
+		&_wrapper {
+			display: flex;
+			gap: 29px;
+		}
+	}
+	&_grid {
+		display: grid;
+		grid-template-columns: repeat(5, minmax(231px, 1fr));
+		gap: 24px;
+		margin-bottom: 24px;
+		@include utils.media-max-width(1347) {
+			grid-template-columns: repeat(auto-fill, minmax(231px, 1fr));
+		}
+	}
+}
