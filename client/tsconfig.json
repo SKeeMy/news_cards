@@ -18,13 +18,6 @@
 				"name": "next"
 			}
 		],
-		"css": {
-			"preprocessorOptions": {
-				"scss": {
-					"silenceDeprecations": ["legacy-js-api"]
-				}
-			}
-		},
 		"paths": {
 			"@/*": ["./src/*"]
 		}
