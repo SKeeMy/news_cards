@@ -2,12 +2,33 @@
 .home {
 	margin-top: 48px;
 	margin-bottom: 74px;
+	@include utils.media-max-width(480) {
+		margin-top: 16px;
+		margin-bottom: 24px;
+	}
 	&_buttons {
 		display: flex;
 		justify-content: center;
 		&_wrapper {
-			display: flex;
-			gap: 29px;
+			display: grid;
+			grid-template-columns: repeat(auto-fill, 175px);
+			justify-content: space-between;
+			gap: 12px;
+			width: 583px;
+			flex-wrap: nowrap;
+			@include utils.media-max-width(606) {
+				grid-template-columns: repeat(auto-fit, minmax(154px, 1fr));
+			}
+			@include utils.media-max-width(542) {
+				width: 100%;
+				column-gap: 8px;
+				row-gap: 18px;
+				button {
+					&:nth-child(3) {
+						grid-column: span 2;
+					}
+				}
+			}
 		}
 	}
 	&_grid {
@@ -17,6 +38,14 @@
 		margin-bottom: 24px;
 		@include utils.media-max-width(1347) {
 			grid-template-columns: repeat(auto-fill, minmax(231px, 1fr));
+		}
+		@include utils.media-max-width(582) {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+			gap: 12px;
+		}
+		@include utils.media-max-width(582) {
+			margin-bottom: 18px;
 		}
 	}
 }

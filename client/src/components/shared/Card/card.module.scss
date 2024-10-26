@@ -1,14 +1,23 @@
+@use '../../../styles/use/utils.scss';
 .card {
 	border-radius: 16px;
 	overflow: hidden;
 	&_icon {
 		width: 24px;
 		height: 24px;
+		@include utils.media-max-width(582) {
+			width: 20px;
+			height: 20px;
+		}
 	}
 	&_image {
 		position: relative;
 		width: 100%;
 		height: 217px;
+		@include utils.media-max-width(582) {
+			height: unset;
+			min-height: 181.25px;
+		}
 	}
 	&_body {
 		padding: 24px;
@@ -62,4 +71,8 @@
 	font-size: 18px;
 	font-weight: 700;
 	justify-content: space-between;
+	@include utils.media-max-width(582) {
+		font-size: 16px;
+		line-height: 19.2px;
+	}
 }

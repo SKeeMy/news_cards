@@ -5,4 +5,16 @@
 	@include utils.media-max-width(1347) {
 		--container-width: 1291px;
 	}
+	@include utils.media-max-width(1092) {
+		--container-width: 1036px;
+	}
+	@include utils.media-max-width(837) {
+		--container-width: 781px;
+	}
+	@include utils.media-max-width(582) {
+		--container-width: 526px;
+	}
+	@include utils.media-max-width(480) {
+		--container-width: 472px;
+	}
 }

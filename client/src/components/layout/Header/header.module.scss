@@ -1,5 +1,9 @@
+@use '../../../styles/use/utils.scss';
 .header {
 	margin-top: 48px;
+	@include utils.media-max-width(480) {
+		margin-top: 24px;
+	}
 	&_wrapper {
 		position: relative;
 	}
