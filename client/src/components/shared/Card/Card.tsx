@@ -9,9 +9,8 @@ import { formatDate } from '@/helpers/DateFormater'
 import { Fire } from '@/icons/fire'
 import { Bonus } from '@/icons/bonus'
 
-export const Card: FC<ICardProps> = props => {
+export const Card: FC<Omit<ICardProps, 'pageNum'>> = props => {
 	const { image, color, shortText, slug, datePublish } = props
-
 	const cardColor = cn(s.card_body_type, {
 		[s.pink]: color === 'pink',
 		[s.orange]: color === 'orange',

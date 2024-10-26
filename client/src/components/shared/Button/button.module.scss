@@ -37,3 +37,7 @@
 .orange {
 	background-color: var(--orange-pine);
 }
+.disabled {
+	opacity: 0.7;
+	pointer-events: none;
+}

@@ -6,4 +6,5 @@ export interface ICardProps {
 	shortText: string
 	datePublish: string
 	slug: string
+	pageNum: number
 }
