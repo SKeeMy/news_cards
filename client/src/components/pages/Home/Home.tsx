@@ -8,6 +8,7 @@ import { Color } from '@/types/colors.type'
 import { Button } from '@/components/shared/Button/Button'
 import { ICardProps } from '@/components/shared/Card/card.interface'
 import { Card } from '@/components/shared/Card/Card'
+import { useAppContext } from '@/hooks/useAppContext'
 
 export const Home = () => {
 	const [colors, setColors] = useState<Array<Color>>([
@@ -15,6 +16,11 @@ export const Home = () => {
 		'pink',
 		'orange',
 	])
+
+	const { searchValue } = useAppContext()
+
+	console.log(searchValue)
+
 	const cards: ICardProps[] = [
 		{
 			image: '/images/1.png',

@@ -11,7 +11,7 @@ import { Bonus } from '@/icons/bonus'
 
 export const Card: FC<ICardProps> = props => {
 	const { image, color, shortText, slug, datePublish } = props
-	console.log(image)
+
 	const cardColor = cn(s.card_body_type, {
 		[s.pink]: color === 'pink',
 		[s.orange]: color === 'orange',
